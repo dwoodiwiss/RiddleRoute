@@ -211,12 +211,30 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
+body
+{
+    background-color: #CCCCCC;
+    color: #2c2c2c;
+    text-align: center;
+}
 
+header
+{
+    background-color: #2c2c2c;
+    color: #FFFFFF;
+}
 
+#main
+{
+    background-color: #FFFFFF;
+    color: #000000;
+}
 
-
-
-
+footer
+{
+    background-color: #2c2c2c;
+    color: #FFFFFF;
+}
 
 
 
