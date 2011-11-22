@@ -1,21 +1,23 @@
 $(document).ready(function loader() {
-    console.log("this is from the loader function"); 
+    //console.log("this is from the loader function"); 
     hider();
-    //tester();
+    tester();
     answerMatch();
 });
 
 function hider() {
-    console.log("this is from the hider function");
+    //console.log("this is from the hider function");
     $('#screen1').removeClass('hidden');
 };
 
 function tester() {
     //var $answer = $(this).get(['answer.input']);
-    console.log($answer);
-
-    $answer = $('#answer').val(name); 
-    console.log($answer);
+    //$answer = $('#answerForm input').attr('value'); 
+    //console.log($answer);
+    
+    //$('#result').text($answer);
+    
+    //$answer = $('#answer').val(name); 
 }
 
 function answerMatch(){

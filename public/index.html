@@ -58,9 +58,14 @@
 
             <form id="answerForm" action="index.html" method="get" accept-charset="utf-8">
                 <input id="answer" type="text" name="riddleInput" value="">
-                <input type="submit" value="&rarr;">
+                <input id="answerSubmit" type="submit" value="&rarr;">
             </form>
-            
+
+            <div id="button">
+                <span>O</span>
+            </div>
+
+            <span id="result">empty</span>
         </div>
 
         <div class="hidden" id="screen2">
@@ -99,7 +104,19 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"><\/script>')</script>
 
-      <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script type="text/javascript" charset="utf-8">
+        $("#button").keyup(function () {
+        console.log("keyup was triggered!");
+          var value = $("answer").val();
+          $("#result").text(value);
+        }).keyup();
+    </script>
+
+
+
 
   <!-- scripts concatenated and minified via ant build script -->
   <script src="js/mylibs/helper.js"></script>
