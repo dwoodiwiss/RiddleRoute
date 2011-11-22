@@ -211,11 +211,29 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
+
+html
+{
+    width: 320px;
+}
+
 body
 {
+    //font-family: "Barmeno";
+    font-family: Georgia;
     background-color: #CCCCCC;
     color: #2c2c2c;
     text-align: center;
+}
+
+h1
+{
+    font-family: "Blur";
+}
+
+p
+{
+    font-size: 16px;
 }
 
 header
@@ -226,8 +244,14 @@ header
 
 #main
 {
-    background-color: #FFFFFF;
+    background-color: #000000;
     color: #000000;
+}
+
+#main img
+{
+	width: 320px;
+	//width: 100%;
 }
 
 footer
@@ -240,11 +264,47 @@ footer
 
 
 
+//*  Screens
+---------------------------------------------------------------------- */
+.hidden
+{
+    display: none;
+}
 
+.show
+{
+    display: block;
+}
 
+#pageNav span
+{
+    padding-right: 10px;
+}
 
+#screen1
+{
 
+}
 
+#screen2
+{
+
+}
+
+#screen3
+{
+
+}
+
+#screen4
+{
+
+}
+
+#screen5
+{
+
+}
 /*
  * Media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/The-Style
  */
