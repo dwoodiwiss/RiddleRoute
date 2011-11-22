@@ -1,7 +1,7 @@
 $(document).ready(function loader() {
     //console.log("this is from the loader function"); 
     hider();
-    tester();
+    //tester();
     answerMatch();
 });
 
@@ -11,23 +11,23 @@ function hider() {
 };
 
 function tester() {
-    //var $answer = $(this).get(['answer.input']);
-    //$answer = $('#answerForm input').attr('value'); 
-    //console.log($answer);
+    var $answer = $(this).get(['answer.input']);
+    $answer = $('#answerForm input').attr('value'); 
+    console.log($answer);
     
-    //$('#result').text($answer);
+    $('#result').text($answer);
     
     //$answer = $('#answer').val(name); 
 }
 
 function answerMatch(){
-    // temporary var
-    $answer = "temp";
+    // temporary static var
+    $answer = "Jane Austin";
 
     // riddle 1
-    $answer1 = /Jane\ Austin/i;
+    $answer1 = RegExp(/Jane Austin/gi); 
     // riddle 2
-    $answer2 = "data2";
+    $answer2 = RegExp(/data2/gi); 
     // riddle 3
     $answer3 = "data3";
     // riddle 4
@@ -35,7 +35,7 @@ function answerMatch(){
     // riddle 5
     $answer5 = "data5";
 
-    if ($answer == $answer1 ) {
+    if ($answer == $answer2) {
         // send to correct answer page
         console.log('Riddle 1 is correct!');
     }

@@ -61,10 +61,6 @@
                 <input id="answerSubmit" type="submit" value="&rarr;">
             </form>
 
-            <div id="button">
-                <span>O</span>
-            </div>
-
             <span id="result">empty</span>
         </div>
 
@@ -105,17 +101,6 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"><\/script>')</script>
 
     <script src="js/script.js"></script>
-
-
-    <script type="text/javascript" charset="utf-8">
-        $("#button").keyup(function () {
-        console.log("keyup was triggered!");
-          var value = $("answer").val();
-          $("#result").text(value);
-        }).keyup();
-    </script>
-
-
 
 
   <!-- scripts concatenated and minified via ant build script -->
