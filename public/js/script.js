@@ -7,6 +7,7 @@ $(document).ready(function loader() {
 
 function hider() {
     //console.log("this is from the hider function");
+    $('#loading').addClass('hidden');
     $('#screen1').removeClass('hidden');
 };
 

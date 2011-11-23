@@ -305,14 +305,7 @@ span
 
 #answerForm
 {
-    margin-top: -247px;
-}
-
-#answer
-{
-    width: 120px;
-    height 75px;
-    margin-left: 55px;
+    margin-top: -245px;
 }
 
 #screen2
