@@ -2,7 +2,7 @@ $(document).ready(function loader() {
     //console.log("this is from the loader function"); 
     hider();
     //tester();
-    answerMatch();
+    //answerMatch();
 });
 
 function hider() {
@@ -15,11 +15,28 @@ function tester() {
     var $answer = $(this).get(['answer.input']);
     $answer = $('#answerForm input').attr('value'); 
     console.log($answer);
-    
+
     $('#result').text($answer);
-    
+
     //$answer = $('#answer').val(name); 
 }
+
+// Take Input and validate
+$("#answerForm").submit(function() {
+
+    if ($("input:first").val().match(/jane austin/i)) {
+        //$("#result").text("Correct").show().fadeOut(1000);
+
+        $("#correct").removeClass('hidden');
+        $("#screen1").addClass('hidden');
+        return false;
+    }
+    //$("#result").text("Incorrect").show().fadeOut(1000);
+        
+    $("#incorrect").removeClass('hidden');
+    $("#screen1").addClass('hidden');
+    return false;
+});
 
 function answerMatch(){
     // temporary static var
@@ -42,5 +59,6 @@ function answerMatch(){
     }
     else {
         // send to incorrect answer page
+        $('#incorrect').removeClass('hidden');
     }
 };

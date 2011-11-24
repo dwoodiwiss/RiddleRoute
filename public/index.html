@@ -29,7 +29,7 @@
     <!--iOS web app, deletable if not needed -->
     <!--the script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
     <link rel="apple-touch-startup-image" href="img/l/splash.png">
 
@@ -60,12 +60,10 @@
                 <div class="hidden" id="screen1">
                     <img src="img/h/mockups/riddle1.jpg" alt="map">
 
-                    <form id="answerForm" action="index.html" method="get" accept-charset="utf-8">
+                    <form id="answerForm" action="" method="get" accept-charset="utf-8">
                         <input id="answer" type="text" name="riddleInput" value="">
                         <input id="answerSubmit" type="submit" value="&rarr;">
                     </form>
-
-                    <span id="result">empty</span>
                 </div>
 
                 <div class="hidden" id="screen2">
@@ -83,6 +81,14 @@
                 <div class="hidden" id="screen5">
                     <span>this is screen 5</span> 
                 </div>
+
+                <div class="hidden" id="incorrect">
+                    <img src="img/h/mockups/incorrect.jpg">
+                </div>
+
+                <div class="hidden" id="correct">
+                    <img src="img/h/mockups/correct.jpg">
+                </div>
             </div>
 
             <footer>
@@ -93,7 +99,7 @@
                 <!--<span id="button3">3</span>-->
                 <!--<span id="button4">4</span>-->
                 <!--<span id="button5">5</span>-->
-            <!--</div>-->
+                <!--</div>-->
             </footer>
         </div> <!--! end of #container -->
 
@@ -104,20 +110,20 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"><\/script>')</script>
 
-            <script src="js/script.js"></script>
+        <!-- Darren's Javascript -->
+        <script src="js/script.js"></script>
 
+        <!-- scripts concatenated and minified via ant build script -->
+        <script src="js/mylibs/helper.js"></script>
+        <!-- end concatenated and minified scripts-->
 
-            <!-- scripts concatenated and minified via ant build script -->
-            <script src="js/mylibs/helper.js"></script>
-            <!-- end concatenated and minified scripts-->
+        <script>
+            // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+            MBP.scaleFix();
+        </script>
 
-            <script>
-                // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
-                MBP.scaleFix();
-            </script>
+        <!-- Debugger - remove for production -->
+        <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
 
-            <!-- Debugger - remove for production -->
-            <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
-
-        </body>
-    </html>
+    </body>
+</html>

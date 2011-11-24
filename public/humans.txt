@@ -1,20 +1,16 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
-
-/* THANKS */
-  Names (& URL):
+  Mr : Darren Woodiwiss
+  Site: http://www.darrenwoodiwiss.com
+  Twitter: @DWoodiwiss
+  Location: Winchester, UK
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software:
+  Software: MacVim
 
 
 
