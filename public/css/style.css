@@ -267,7 +267,7 @@ span
 
 
 
-//*  Screens
+/*  Screens
 ---------------------------------------------------------------------- */
 .hidden
 {
@@ -334,6 +334,39 @@ span
 {
 
 }
+
+/*  Buttons
+---------------------------------------------------------------------- */
+.map
+{
+    z-index: 1;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+}
+
+.riddle
+{
+    z-index: 1;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 100px;
+    background-color: green;
+}
+
+.clue
+{
+    z-index: 1;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 230px;
+    background-color: yellow;
+}
+
 /*
  * Media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/The-Style
  */

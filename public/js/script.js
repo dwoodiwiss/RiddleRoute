@@ -3,6 +3,7 @@ $(document).ready(function loader() {
     hider();
     //tester();
     //answerMatch();
+    buttons();
 });
 
 function hider() {
@@ -37,6 +38,21 @@ $("#answerForm").submit(function() {
     $("#screen1").addClass('hidden');
     return false;
 });
+
+function buttons(){
+
+    $('.map').click(function(){
+       
+        //$('.back').css('background-color', 'green');
+
+        $('#screen1').addClass('hidden');
+        $('#correct').addClass('hidden');
+        $('#incorrect').addClass('hidden');
+        $('#map').removeClass('hidden');
+
+    });
+
+};
 
 function answerMatch(){
     // temporary static var
