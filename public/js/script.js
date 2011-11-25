@@ -52,6 +52,19 @@ function buttons(){
 
     });
 
+    // New function
+    // Get #incorrect, IF hasClass="hidden"
+    // {
+    //  do nothing
+    // }
+    // else
+    // {
+    //  var riddleLocation(needs to be created globally) = 
+    //  ?this? or var currentLocation {global}
+    // 
+    //  parse to page switcher func as arg?
+    // }
+
 };
 
 function answerMatch(){
