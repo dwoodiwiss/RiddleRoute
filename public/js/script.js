@@ -49,12 +49,16 @@ function answerMatch(){
 $("#answerForm").submit(function() {
     
     if ($("input:first").val().match(/Swithun/ig)) {
-        //$("#result").text("Correct").show().fadeOut(1000);
         hide_screens();
         show_screen('correct');
-
+       
+        //console.log('THIS', $url);
+        localStorage.setItem('complete', $url);
+        console.log('LOCALSTORAGE =', localStorage.complete);
+        
         return false;
     }
+    
     else
     {
         hide_screens();
@@ -84,6 +88,11 @@ function buttons(){
             show_screen('riddle1');
         };
     });
+
+    $('.clue').click(function(){
+        
+        console.log(localStorage);
+        //localStorage.clear();
+    });
     
 };
-
