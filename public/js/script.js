@@ -4,7 +4,6 @@ $(document).ready(function loader() {
     //tester();
     //answerMatch();
     buttons();
-    scoreStore();
 });
 
 function hider() {
@@ -53,12 +52,12 @@ function buttons(){
 
     });
 
-    $('.riddle').click(function(){
-
+    $('.riddle').click(function($item){
+        $item = localStorage.getItem('score');
         //console.log($answer);
         //console.log(window.location.search);
         $('.riddle').css('background-color', 'red');
-        scoreLog();
+        $('#answer').val($item);
     });
     
     // New function
@@ -77,8 +76,6 @@ function buttons(){
 };
 
 function answerMatch(){
-    // temporary static var
-    $answer = "Jane Austin";
 
     // riddle 1
     $answer1 = RegExp(/Jane Austin/gi); 
@@ -101,33 +98,33 @@ function answerMatch(){
     }
 };
 
-function scoreStore(){
-    localStorage.setItem('score','7/10');
-    console.log('local storage has been set');
-};
-
-function scoreLog(){
-    $score = localStorage.getItem('score'); 
-    console.log('local storage is:', $score);
-    $('#answer').val($score);
-};
-
-
-$('.riddle').click(function scoreMap(){
-
-    $currentScore = localStorage.getItem('score');
-
-     if ($currentScore == 'NULL') {
-        
-         $('.clue').css('background-color', 'blue');
-
-    };
+$('#button1').click(function(){
+    localStorage.setItem('score', 'one');
+    console.log('button1 was pressed');
 });
 
+$('#button2').click(function(){
+   
+    localStorage.setItem('score', 'two');
+    console.log('button2 was pressed');
 
-$('.clue').click(function() {
- 
-    $('.clue').css('background-color', 'red');
-    localStorage.setItem('score','NULL');
-        
+});
+
+$('#button3').click(function(){
+   
+    console.log('button3 was pressed');
+
+});
+
+$('#button4').click(function(){
+   
+    console.log('button4 was pressed');
+
+});
+
+$('#button5').click(function(){
+   
+    localStorage.clear();
+    console.log('localStorage was cleared');
+
 });
