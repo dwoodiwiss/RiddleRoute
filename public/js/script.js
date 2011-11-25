@@ -6,7 +6,7 @@ $(document).ready(function loader() {
     URLRedirects();
     
     hide_screens();
-    show_screen('screen1');
+    show_screen($url);
 });
 
 function hide_screens() {
@@ -26,13 +26,13 @@ function URLRedirects(){
     console.log($url);
 
     if ($url == 'riddle1') {
-        console.log('url = riddle1');
+        console.log('url =', $url);
         hide_screens();
         //show_screen('screen1');
     }
     else
     {
-        console.log('url = !riddle1');
+        console.log('url =', $url);
         hide_screens();
         show_screen('screen2');
     };
