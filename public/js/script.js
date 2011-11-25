@@ -112,12 +112,14 @@ $('#button2').click(function(){
 
 $('#button3').click(function(){
    
+    localStorage.setItem('score', 'three');
     console.log('button3 was pressed');
 
 });
 
 $('#button4').click(function(){
-   
+
+    localStorage.setItem('score', 'four');
     console.log('button4 was pressed');
 
 });
