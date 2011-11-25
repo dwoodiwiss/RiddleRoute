@@ -28,7 +28,7 @@ function URLRedirects(){
     if ($url == 'riddle1') {
         console.log('url = riddle1');
         hide_screens();
-        show_screen('screen1');
+        //show_screen('screen1');
     }
     else
     {
@@ -64,16 +64,16 @@ function buttons(){
 
     });
 
-    $('.riddle').click(function($item){
+    $('.riddle').click(function(){
 
-        if ($('#correct').css('display', 'none')) {
+        if ($currentScreen == 'correct') {
             hide_screens();
-            show_screen('screen1');
+            show_screen('map');
         }
         else
         {
             hide_screens();
-            show_screen('map');
+            show_screen('screen1');
         };
     });
     
