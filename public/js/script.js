@@ -4,6 +4,7 @@ $(document).ready(function loader() {
     //tester();
     //answerMatch();
     buttons();
+    scoreStore();
 });
 
 function hider() {
@@ -24,7 +25,7 @@ function tester() {
 
 // Take Input and validate
 $("#answerForm").submit(function() {
-
+    
     if ($("input:first").val().match(/jane austin/i)) {
         //$("#result").text("Correct").show().fadeOut(1000);
 
@@ -52,6 +53,14 @@ function buttons(){
 
     });
 
+    $('.riddle').click(function(){
+
+        //console.log($answer);
+        //console.log(window.location.search);
+        $('.riddle').css('background-color', 'red');
+        scoreLog();
+    });
+    
     // New function
     // Get #incorrect, IF hasClass="hidden"
     // {
@@ -91,3 +100,34 @@ function answerMatch(){
         $('#incorrect').removeClass('hidden');
     }
 };
+
+function scoreStore(){
+    localStorage.setItem('score','7/10');
+    console.log('local storage has been set');
+};
+
+function scoreLog(){
+    $score = localStorage.getItem('score'); 
+    console.log('local storage is:', $score);
+    $('#answer').val($score);
+};
+
+
+$('.riddle').click(function scoreMap(){
+
+    $currentScore = localStorage.getItem('score');
+
+     if ($currentScore == 'NULL') {
+        
+         $('.clue').css('background-color', 'blue');
+
+    };
+});
+
+
+$('.clue').click(function() {
+ 
+    $('.clue').css('background-color', 'red');
+    localStorage.setItem('score','NULL');
+        
+});
