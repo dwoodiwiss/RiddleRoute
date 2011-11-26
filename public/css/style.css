@@ -315,26 +315,6 @@ span
     margin-left: 50px;
 }
 
-#screen2
-{
-
-}
-
-#screen3
-{
-
-}
-
-#screen4
-{
-
-}
-
-#screen5
-{
-
-}
-
 /*  Buttons
 ---------------------------------------------------------------------- */
 .map
@@ -350,7 +330,7 @@ span
 .riddle
 {
     z-index: 1;
-    height: 80px;
+    height: 100px;
     width: 230px;
     position: absolute;
     margin-top: 325px;
@@ -370,6 +350,37 @@ span
     background-color: yellow;
     opacity: 0.4;
 }
+
+/*  Buttons
+---------------------------------------------------------------------- */
+#spot1
+{
+    z-index: 1;
+    margin-left: 155px;
+    margin-top: 70px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    opacity: 0.4;
+}
+
+#spot2
+{
+    z-index: 1;
+    margin-left: 177px;
+    margin-top: 350px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    opacity: 0.4;
+}
+
+
+
+
+
 
 /*
  * Media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/The-Style
