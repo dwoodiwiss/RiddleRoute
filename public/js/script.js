@@ -32,30 +32,28 @@ function inputGetter(){
 $("#answerForm").submit(function() {
     inputGetter();
     
-    $answer1 = /Swithun/i
-    $answer2 = /Whykenham/i
+    $answer1 = /Swithun/i;
+    $answer2 = /Whykenham/i;
 
     // perhaps try an if else again and see how it goes.
 
-    switch($inputValue) {
-        // Riddle1 = Saint Swithun
-        case $answer1:
-            hide_screens();
-            show_screen('correct');
-           
-            //console.log('THIS', $url);
-            localStorage.setItem('complete', $url);
-            console.log('LocalStorage=', localStorage.complete);
-            console.log('LocalStorage Total =', localStorage);
-             
-            return false;
-            break;
-            
-        default:
-            hide_screens();
-            show_screen('incorrect');
-            return false;
+    if ($inputValue.match($answer1)) {
+        hide_screens();
+        show_screen('correct');
+       
+        //console.log('THIS', $url);
+        localStorage.setItem('complete', $url);
+        console.log('LocalStorage=', localStorage.complete);
+        console.log('LocalStorage Total =', localStorage);
+         
+        return false;
     }
+    else
+    {
+        hide_screens();
+        show_screen('incorrect');
+        return false;
+    };
 });
 
 function buttons(){
