@@ -24,8 +24,23 @@ function urlGetter(){
 };
 
 function inputGetter(){
-    $inputValue = $('.answer').val();
-    console.log('INPUT =', $inputValue);
+
+    switch($url) {
+        case 'riddle1':
+            $inputValue = $('input[class="answer1"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+        
+        case 'riddle2':
+            $inputValue = $('input[class="answer2"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
+        default:
+            // do nothing! 
+    };
+    
+
 };
 
 function answerDetect(){
