@@ -1,10 +1,6 @@
 $(document).ready(function loader() {
-    //console.log("this is from the loader function"); 
-    //tester();
-    //answerMatch();
     URLRedirects();
     buttons();
-    
     hide_screens();
     show_screen($url);
 });
@@ -24,46 +20,38 @@ function URLRedirects(){
 
     $url = window.location.search.replace(/\?riddleInput=/, '');
     console.log('URL =', $url);
-    if ($url == 'riddle1') {
-        hide_screens();
-        show_screen('riddle1');
-    }
 };
 
-function answerMatch(){
-
-    // riddle 1
-    $answer1 = RegExp(/Swithun/gi); 
-    // riddle 2
-    $answer2 = RegExp(/data2/gi); 
-    // riddle 3
-    $answer3 = "data3";
-    // riddle 4
-    $answer4 = "data4";
-    // riddle 5
-    $answer5 = "data5";
-
+function inputGetter(){
+    $inputValue = $('input:first').val();
+    //console.log('INPUT =', $inputValue);
 };
 
 // Take Input and validate
 $("#answerForm").submit(function() {
+
+    inputGetter();
     
-    if ($("input:first").val().match(/Swithun/ig)) {
-        hide_screens();
-        show_screen('correct');
-       
-        //console.log('THIS', $url);
-        localStorage.setItem('complete', $url);
-        console.log('LOCALSTORAGE =', localStorage.complete);
-        
-        return false;
-    }
-    
-    else
-    {
-        hide_screens();
-        show_screen('incorrect');
-        return false;
+    $answer1 = /Swithun/i;
+
+    switch($answer1) {
+        // Riddle1 = Saint Swithun
+        case $inputValue:
+            hide_screens();
+            show_screen('correct');
+           
+            //console.log('THIS', $url);
+            localStorage.setItem('complete', $url);
+            console.log('LocalStorage=', localStorage.complete);
+            console.log('LocalStorage Total =', localStorage);
+             
+            return false;
+            break;
+            
+        default:
+            hide_screens();
+            show_screen('incorrect');
+            return false;
     }
 });
 
@@ -85,14 +73,15 @@ function buttons(){
         else
         {
             hide_screens();
-            show_screen('riddle1');
+            show_screen($url);
         };
     });
 
     $('.clue').click(function(){
         
-        console.log(localStorage);
-        //localStorage.clear();
+        //console.log(localStorage);
+        localStorage.clear();
+        console.log('localStorage has been cleared');
     });
     
 };
