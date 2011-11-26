@@ -1,7 +1,7 @@
 $(document).ready(function loader() {
     urlGetter();
     buttons();
-
+    answerDetect();
       
     hide_screens();
     show_screen($url);
@@ -24,29 +24,31 @@ function urlGetter(){
 };
 
 function inputGetter(){
-    $inputValue = $('input:first').val();
+    $inputValue = $('.answer').val();
     console.log('INPUT =', $inputValue);
 };
 
-// Take Input and validate
-$("#answerForm").submit(function() {
-    inputGetter();
-    
+function answerDetect(){
     switch($url) {
         case 'riddle1':
             $answer = /Swithun/i;
-            console.log($answer);
+            //console.log($answer);
             break;
             
         case 'riddle2':
             $answer = /Wykeham/i;
-            console.log($answer);
+            //console.log($answer);
             break;
 
         default:
             $answer = 'NULL';
             break;
     };
+};
+
+// Take Input and validate
+$(".answerForm").submit(function() {
+    inputGetter();
 
     if ($inputValue.match($answer)) {
         hide_screens();
@@ -157,9 +159,9 @@ function buttons(){
 
     $('.clue').click(function(){
 
-        //localStorage.clear();
-        //console.log('localStorage has been cleared');
-        console.log(localStorage);
+        localStorage.clear();
+        console.log('localStorage has been cleared');
+        // console.log($answer);
 
     });
 

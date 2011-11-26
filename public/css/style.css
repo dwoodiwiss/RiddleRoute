@@ -303,12 +303,12 @@ span
 
 }
 
-#answerForm
+.answerForm
 {
    margin-top: -247px;
 }
 
-#answer
+.answer
 {
     width: 155px;
     margin-left: 50px;
@@ -371,11 +371,11 @@ span
 #spot2
 {
     z-index: 1;
-    margin-left: 177px;
-    margin-top: 350px;
+    margin-left: 172px;
+    margin-top: 345px;
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 }
 
 #spot2 img
