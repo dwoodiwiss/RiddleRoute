@@ -1,6 +1,7 @@
 $(document).ready(function loader() {
     URLRedirects();
     buttons();
+
     hide_screens();
     show_screen($url);
 });
@@ -24,19 +25,21 @@ function URLRedirects(){
 
 function inputGetter(){
     $inputValue = $('input:first').val();
-    //console.log('INPUT =', $inputValue);
+    console.log('INPUT =', $inputValue);
 };
 
 // Take Input and validate
 $("#answerForm").submit(function() {
-
     inputGetter();
     
-    $answer1 = /Swithun/i;
+    $answer1 = /Swithun/i
+    $answer2 = /Whykenham/i
 
-    switch($answer1) {
+    // perhaps try an if else again and see how it goes.
+
+    switch($inputValue) {
         // Riddle1 = Saint Swithun
-        case $inputValue:
+        case $answer1:
             hide_screens();
             show_screen('correct');
            
