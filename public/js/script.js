@@ -18,7 +18,6 @@ function show_screen(id) {
 };
 
 function urlGetter(){
-
     $url = window.location.search.replace(/\?riddleInput=/, '');
     console.log('URL =', $url);
 };
@@ -33,9 +32,7 @@ $("#answerForm").submit(function() {
     inputGetter();
 
     $answer1 = /Swithun/i;
-    $answer2 = /Whykenham/i;
-
-    // perhaps try an if else again and see how it goes.
+    $answer2 = /Wykeham/i;
 
     if ($inputValue.match($answer1)) {
         hide_screens();
