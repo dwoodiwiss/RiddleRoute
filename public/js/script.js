@@ -2,6 +2,7 @@ $(document).ready(function loader() {
     urlGetter();
     buttons();
 
+      
     hide_screens();
     show_screen($url);
 });
@@ -55,19 +56,27 @@ $("#answerForm").submit(function() {
 function scoreStore(){
     localStorage.setItem($url, $currentScreen);
     //console.log('LocalStorage=', localStorage.incorrect);
-    console.log('LocalStorage Total =', localStorage);
+    //console.log('LocalStorage Total =', localStorage);
 };
 
 function mapIcons(){
+    switch(localStorage.riddle1) {
+        case 'correct':
+            $('#spot1').removeClass('incorrect'); 
+            $('#spot1').addClass('correct');
+            break;
+            
+        case 'incorrect':
+            $('#spot1').removeClass('correct');
+            $('#spot1').addClass('incorrect');
+            break;
 
-    if (localStorage.riddle1 = "incorrect") {
-        $('#spot1').css('display', 'none');
+        default:
+            $('#spot1').removeClass('correct');
+            $('#spot1').removeClass('incorrect');
     }
-    else{
-        $('#spot1').css('display', 'block');
-    };
-
 };
+
 
 function buttons(){
 
@@ -88,6 +97,8 @@ function buttons(){
 
     $('.riddle').click(function(){
 
+        mapIcons();
+
         if ($currentScreen == 'correct') {
             hide_screens();
             show_screen('map');
@@ -105,10 +116,9 @@ function buttons(){
 
     $('.clue').click(function(){
 
-        //console.log(localStorage);
-        localStorage.clear();
-        console.log('localStorage has been cleared');
-        console.log(localStorage);
+        //localStorage.clear();
+        //console.log('localStorage has been cleared');
+        console.log(localStorage.riddle1);
 
     });
 

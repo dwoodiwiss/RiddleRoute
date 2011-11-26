@@ -250,8 +250,7 @@ header
 
 #main img
 {
-	width: 320px;
-	//width: 100%;
+    width: 320px;
 }
 
 footer
@@ -356,13 +355,17 @@ span
 #spot1
 {
     z-index: 1;
-    margin-left: 155px;
-    margin-top: 70px;
+    margin-left: 150px;
+    margin-top: 65px;
     position: absolute;
-    height: 20px;
-    width: 20px;
-    background-color: green;
-    opacity: 0.4;
+    height: 30px;
+    width: 30px;
+}
+
+#spot1 img
+{
+    height: 100%;
+    width: 100%;
 }
 
 #spot2
@@ -377,6 +380,23 @@ span
     opacity: 0.4;
 }
 
+#map
+{
+    height: 30px;
+    width: 30px;
+}
+
+.correct
+{
+    background-image: url('../img/h/final/happy.png');
+    background-repeat: no-repeat;
+}
+
+.incorrect
+{
+    background-image: url('../img/h/final/sad.png');
+    background-repeat: no-repeat;
+}
 
 
 
