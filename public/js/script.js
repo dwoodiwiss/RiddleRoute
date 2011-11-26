@@ -30,7 +30,7 @@ function inputGetter(){
 // Take Input and validate
 $("#answerForm").submit(function() {
     inputGetter();
-
+     
     $answer1 = /Swithun/i;
     $answer2 = /Wykeham/i;
 
@@ -53,14 +53,27 @@ $("#answerForm").submit(function() {
 });
 
 function scoreStore(){
-    localStorage.setItem($currentScreen, $url);
-    console.log('LocalStorage=', localStorage.url);
+    localStorage.setItem($url, $currentScreen);
+    //console.log('LocalStorage=', localStorage.incorrect);
     console.log('LocalStorage Total =', localStorage);
+};
+
+function mapIcons(){
+
+    if (localStorage.riddle1 = "incorrect") {
+        $('#spot1').css('display', 'none');
+    }
+    else{
+        $('#spot1').css('display', 'block');
+    };
+
 };
 
 function buttons(){
 
     $('.map').click(function(){
+
+        mapIcons();
 
         if ($currentScreen == 'map') {
             hide_screens();
@@ -78,6 +91,7 @@ function buttons(){
         if ($currentScreen == 'correct') {
             hide_screens();
             show_screen('map');
+            console.log(localStorage);
         }
         else if ($currentScreen == 'howToPlay') {
             hide_screens();
