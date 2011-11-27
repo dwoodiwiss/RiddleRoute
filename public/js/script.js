@@ -1,6 +1,3 @@
-// @TODO change page title upon url change
-// @TODO investigate adding sound to score page
-
 $(document).ready(function loader() {
     urlGetter();
     buttons();
@@ -24,6 +21,24 @@ function show_screen(id) {
 function urlGetter(){
     $url = window.location.search.replace(/\?page=/, '');
     console.log('URL =', $url);
+};
+
+function titleChanger(){
+        
+    switch($url) {
+        case 'riddle1':
+            document.title = "Riddle Route :: Swithun";
+            break;
+        
+        case 'riddle2':
+            document.title = "Riddle Route :: Wykeham";
+            break;
+
+        default:
+            document.title = "Home :: Riddle Route";
+            break;
+    };
+        
 };
 
 function inputGetter(){
