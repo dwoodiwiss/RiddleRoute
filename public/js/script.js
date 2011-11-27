@@ -1,3 +1,6 @@
+// @TODO change page title upon url change
+// @TODO investigate adding sound to score page
+
 $(document).ready(function loader() {
     urlGetter();
     buttons();
