@@ -192,12 +192,24 @@ function buttons(){
 
         switch($url) {
             case 'riddle1':
-                hide_screens();
-                show_screen('clue1');
+                
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue1');
+                };
+                
                 break;
             case 'riddle2':
-                hide_screens();
-                show_screen('clue2');
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue2');
+                };
                 break;
 
             default:
@@ -205,6 +217,8 @@ function buttons(){
                 show_screen('map');
                 break;
         }
+    
+
 
         //localStorage.clear();
         //console.log('localStorage has been cleared');
