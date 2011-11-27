@@ -1,4 +1,4 @@
-$(document).ready(function loader() {
+$document).ready(function loader() {
     urlGetter();
     buttons();
     answerDetect();
