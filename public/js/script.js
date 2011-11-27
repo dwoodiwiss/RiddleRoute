@@ -145,15 +145,26 @@ function buttons(){
 
         mapIcons();
 
-        if ($currentScreen == 'map') {
-            hide_screens();
-            show_screen('howToPlay');
-        }
-        else{
-            hide_screens();
-            show_screen('map');
-        };
+        switch($currentScreen) {
+            case 'map':
+                hide_screens();
+                show_screen('howToPlay');
+                break;
+            
+            case 'clue1':
+                hide_screens();
+                show_screen('riddle1');
+                break;
 
+            case 'clue2':
+                hide_screens();
+                show_screen('riddle2');
+                break;
+
+            default:
+                hide_screens();
+                show_screen('map');
+        }
     });
 
     $('.riddle').click(function(){
@@ -176,9 +187,27 @@ function buttons(){
     });
 
     $('.clue').click(function(){
+        
+        $clue = $url;
 
-        localStorage.clear();
-        console.log('localStorage has been cleared');
+        switch($url) {
+            case 'riddle1':
+                hide_screens();
+                show_screen('clue1');
+                break;
+            case 'riddle2':
+                hide_screens();
+                show_screen('clue2');
+                break;
+
+            default:
+                hide_screens();
+                show_screen('map');
+                break;
+        }
+
+        //localStorage.clear();
+        //console.log('localStorage has been cleared');
         // console.log($answer);
 
     });
