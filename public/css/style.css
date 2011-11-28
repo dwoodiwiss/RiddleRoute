@@ -314,6 +314,17 @@ span
     margin-left: 50px;
 }
 
+#score
+{
+    background-color: #000000;
+    height: 480px;
+}
+
+#scoreResult
+{
+    color: #FFFFFF;
+}
+
 /*  Buttons
 ---------------------------------------------------------------------- */
 .map

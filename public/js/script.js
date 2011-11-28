@@ -1,7 +1,18 @@
-$document).ready(function loader() {
+// @TODO optimise images
+// @TODO Create score screen
+// update map screen with new image to link back to riddle1
+// implement new buttons
+// check 3g loading, .ready?
+
+$(document).ready(function loader() {
+   
+    // titleChanger();
+    // Try calling function and test again
+    
     urlGetter();
     buttons();
     answerDetect();
+    scoreGetter();
       
     hide_screens();
     show_screen($url);
@@ -153,6 +164,23 @@ function mapIcons(){
 
 };
 
+function scoreGetter(){
+    
+    $scoreData = localStorage;
+    //console.log($scoreData);
+    scoreSorter();
+};
+
+function scoreSorter(){
+// instantiated in scoreGetter();
+   
+    for (var i = 0; i < localStorage.length; i++) {
+        console.log(localStorage);
+    };
+
+    //console.log($scoreData.riddle1);
+
+};
 
 function buttons(){
 
