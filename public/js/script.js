@@ -203,6 +203,11 @@ function scoreSorter(){
 
 function buttons(){
     
+    $('.score').click(function(){
+        hide_screens();
+        show_screen('score');
+    });
+
     $('.howToPlay').click(function(){
         hide_screens();
         show_screen('howToPlay');
