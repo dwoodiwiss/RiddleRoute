@@ -12,8 +12,8 @@ $(document).ready(function loader() {
     urlGetter();
     buttons();
     answerDetect();
-    scoreGetter();
-      
+    scoreSorter(); 
+
     hide_screens();
     show_screen($url);
 });
@@ -164,34 +164,58 @@ function mapIcons(){
 
 };
 
-function scoreGetter(){
-    
-    $scoreData = localStorage;
-    //console.log($scoreData);
-    scoreSorter();
-};
-
 function scoreSorter(){
-// instantiated in scoreGetter();
-   
-    for (var i = 0; i < localStorage.length; i++) {
-        console.log(localStorage);
-    };
+        
+        // window.localStorage?
+        $scoreData = window.localStorage;
 
-    //console.log($scoreData.riddle1);
+        $score1 = $scoreData['riddle1'];
+        $score2 = $scoreData['riddle2'];
 
+        switch($score1) {
+            case 'correct':
+                $scoreImage1 = ('<img src="img/h/final/happy.jpg">');
+                break;
+            
+            case 'incorrect':
+                $scoreImage1 = ('<img src="img/h/final/sad.jpg">');
+                break;
+
+            default:
+                $scoreImage1 = 'un-attempted'; 
+        };
+        $('#score1').text('riddle 1 = '+ $scoreImage1);
+
+        switch($score2) {
+            case 'correct':
+                $scoreImage2 = ('img/h/final/happy.png');
+                break;
+            
+            case 'incorrect':
+                $scoreImage2 = ('img/h/final/sad.png');
+                break;
+
+            default:
+                $scoreImage2 = 'un-attempted';
+        };
+        $('#score2').attr('src', $scoreImage2);
 };
 
 function buttons(){
+    
+    $('.howToPlay').click(function(){
+        hide_screens();
+        show_screen('howToPlay');
+    });
 
     $('.map').click(function(){
 
         mapIcons();
-
+        
         switch($currentScreen) {
             case 'map':
                 hide_screens();
-                show_screen('howToPlay');
+                show_screen($url);
                 break;
             
             case 'clue1':

@@ -361,6 +361,18 @@ span
     opacity: 0.4;
 }
 
+.howToPlay
+{
+    z-index: 1;
+    height: 60px;
+    width: 85px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 264px;
+    background-color: blue;
+    opacity: 0.4;
+}
+
 /*  Buttons
 ---------------------------------------------------------------------- */
 #spot1
@@ -414,23 +426,33 @@ span
 }
 
 
+/*  Score Screen
+---------------------------------------------------------------------- */
+#score1
+{
 
+}
+
+#score2
+{
+
+}
 
 
 /*
- * Media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/The-Style
+ * media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/the-style
  */
 
 
-/* Styles for desktop and large screen ----------- */
+/* styles for desktop and large screen ----------- */
 
 /*styles for 800px and up!*/
 @media only screen and (min-width: 800px) {
-  /* Styles */
+  /* styles */
 }/*/mediaquery*/
 
 
-/* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
+/* iphone 4, opera mobile 11 and other high pixel ratio devices ----------- */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
