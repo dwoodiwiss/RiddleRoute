@@ -1,5 +1,4 @@
 // tell Katya about circle
-// @TODO adujust credits
 // @TODO optimise images || Partially done
 // @TODO create score screen
 // @TODO check 3g loading, .ready?
@@ -201,6 +200,7 @@ function scoreSorter(){
 
 function scoreTotal(){
 
+    $result = '';
     for (var i = 1; i < localStorage.length +1; i++) {
         
         $result = localStorage.getItem('riddle'+(i));
@@ -275,14 +275,14 @@ function buttons(){
 
         if ($currentScreen == 'correct') {
             hide_screens();
-            show_screen('map');
-            //console.log(localStorage);
+            show_screen($url);
         }
         else if ($currentScreen == 'howToPlay') {
             hide_screens();
             show_screen('map');
         }
         else{
+            // only affecting incorrect screen?
             hide_screens();
             show_screen($url);
         };

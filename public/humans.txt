@@ -2,10 +2,20 @@
 /* humanstxt.org */
 
 /* TEAM */
-  Mr : Darren Woodiwiss
+
+  Design and Content: Jekaterina Lukjanova
+  Site: ?
+  Twitter: ?
+  Location: ?
+
+  Developer: Darren Woodiwiss
   Site: http://www.darrenwoodiwiss.com
   Twitter: @DWoodiwiss
   Location: Winchester, UK
+
+  Riddles:  Sammy Jade Ware, Jekaterina Lukjanova, Tilda Oosthuizsen
+
+  Copyright©2011 J.Lukjanova,D.Woodiwiss,University of Winchester
 
 /* SITE */
   Standards: HTML5, CSS3
