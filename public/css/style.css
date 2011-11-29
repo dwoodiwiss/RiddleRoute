@@ -450,11 +450,19 @@ span
 ---------------------------------------------------------------------- */
 #score1
 {
+    margin-top: 194px;
+    margin-left: 52px;
+    height: 30px;
+    width: 30px;
     position: absolute;
 }
 
 #score2
 {
+    margin-top: 355px;
+    margin-left: 52px;
+    height: 30px;
+    width: 30px;
     position: absolute;
 }
 

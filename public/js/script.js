@@ -175,33 +175,29 @@ function scoreSorter(){
 
         switch($score1) {
             case 'correct':
-                $scoreImage1 = ('<img src="img/h/final/happy.jpg">');
+                $('#score1').addClass('correct');
                 break;
             
             case 'incorrect':
-                $scoreImage1 = ('<img src="img/h/final/sad.jpg">');
+                $('#score1').addClass('incorrect');
                 break;
 
             default:
-                $scoreImage1 = 'un-attempted'; 
+                // do nothing?
         };
-        $('#score1').text('riddle 1 = '+ $scoreImage1);
 
         switch($score2) {
             case 'correct':
                 $('#score2').addClass('correct');
-                //$scoreImage2 = ('img/h/final/happy.png');
                 break;
             
             case 'incorrect':
                 $('#score2').addClass('incorrect');
-                //$scoreImage2 = ('img/h/final/sad.png');
                 break;
 
             default:
-                //$('#score2') = 'un-attempted';
+                // do nothing
         };
-        //$('#score2').attr('src', $scoreImage2);
 };
 
 function buttons(){
@@ -226,7 +222,12 @@ function buttons(){
     $('.map').click(function(){
 
         mapIcons();
-        
+       
+        if ($url == 'wellDone') {
+            hide_screens();
+            show_screen('score');
+        };
+
         switch($currentScreen) {
             case 'map':
                 hide_screens();
