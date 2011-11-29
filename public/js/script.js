@@ -1,17 +1,16 @@
 // tell Katya about circle
 // @TODO adujust credits
-// @TODO optimise images
+// @TODO optimise images || Partially done
 // @TODO create score screen
 // @TODO check 3g loading, .ready?
 
 $(document).ready(function loader() {
    
-    // Try calling function and test again
-    
     urlGetter();
     buttons();
     answerDetect();
     scoreSorter(); 
+    scoreTotal();
 
     titleChanger();
     hide_screens();
@@ -200,6 +199,28 @@ function scoreSorter(){
         };
 };
 
+function scoreTotal(){
+
+    for (var i = 1; i < localStorage.length +1; i++) {
+        
+        $result = localStorage.getItem('riddle'+(i));
+
+        console.log($result);
+    };
+
+    for (var i = 0; i < $result.length; i++) {
+        if ($result == 'correct') {
+            $scoreValue = 0;
+            
+            $scoreValue = $scoreValue ++;
+
+        }else{
+            $scoreValue = '0/10';
+        };
+        console.log($scoreValue);
+    };
+};
+
 function buttons(){
 
     $('.reset').click(function(){
@@ -251,8 +272,6 @@ function buttons(){
     });
 
     $('.riddle').click(function(){
-
-        mapIcons();
 
         if ($currentScreen == 'correct') {
             hide_screens();
