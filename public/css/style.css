@@ -226,6 +226,11 @@ body
     text-align: center;
 }
 
+input
+{
+    background-color: yellow;
+}
+
 h1
 {
     font-family: "Blur";
