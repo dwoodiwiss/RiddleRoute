@@ -1,8 +1,7 @@
+// @TODO adujust credits
 // @TODO optimise images
-// @TODO Create score screen
-// update map screen with new image to link back to riddle1
-// implement new buttons
-// check 3g loading, .ready?
+// @TODO create score screen
+// @TODO check 3g loading, .ready?
 
 $(document).ready(function loader() {
    
@@ -188,17 +187,19 @@ function scoreSorter(){
 
         switch($score2) {
             case 'correct':
-                $scoreImage2 = ('img/h/final/happy.png');
+                $('#score2').addClass('correct');
+                //$scoreImage2 = ('img/h/final/happy.png');
                 break;
             
             case 'incorrect':
-                $scoreImage2 = ('img/h/final/sad.png');
+                $('#score2').addClass('incorrect');
+                //$scoreImage2 = ('img/h/final/sad.png');
                 break;
 
             default:
-                $scoreImage2 = 'un-attempted';
+                //$('#score2') = 'un-attempted';
         };
-        $('#score2').attr('src', $scoreImage2);
+        //$('#score2').attr('src', $scoreImage2);
 };
 
 function buttons(){
