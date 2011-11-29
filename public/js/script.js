@@ -1,14 +1,15 @@
-// tell Katya about circle
 // @TODO optimise images || Partially done
 // @TODO create score screen
 // @TODO check 3g loading, .ready?
+//
+// 16th december - all workable
 
 $(document).ready(function loader() {
    
     urlGetter();
     buttons();
     answerDetect();
-    scoreSorter(); 
+    scoreSorter();
     scoreTotal();
 
     titleChanger();
@@ -227,7 +228,7 @@ function buttons(){
         localStorage.clear(); 
         console.log('localStorage has be cleared');
         hide_screens();
-        show_screen('map');
+        show_screen('map2');
     });
     
     $('.score').click(function(){
@@ -272,14 +273,28 @@ function buttons(){
     });
 
     $('.riddle').click(function(){
+        
+        switch($url) {
+            case 'howToPlay':
+                $map = 'map2';
+                break;
+            
+            case 'wellDone':
+                $map = 'map2';
+                break;
+
+            default:
+                $map = 'map';
+        } 
 
         if ($currentScreen == 'correct') {
             hide_screens();
-            show_screen($url);
+            mapIcons();
+            show_screen($map);
         }
         else if ($currentScreen == 'howToPlay') {
             hide_screens();
-            show_screen('map');
+            show_screen($map);
         }
         else{
             // only affecting incorrect screen?

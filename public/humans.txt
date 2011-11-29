@@ -4,9 +4,8 @@
 /* TEAM */
 
   Design and Content: Jekaterina Lukjanova
-  Site: ?
-  Twitter: ?
-  Location: ?
+  Site: katyalukjanova.wordpress.com
+  Location: Winchester, UK
 
   Developer: Darren Woodiwiss
   Site: http://www.darrenwoodiwiss.com
