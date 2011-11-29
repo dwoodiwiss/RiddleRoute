@@ -203,6 +203,11 @@ function scoreSorter(){
 };
 
 function buttons(){
+
+    $('.reset').click(function(){
+        localStorage.clear(); 
+        console.log('localStorage has be cleared');
+    });
     
     $('.score').click(function(){
         hide_screens();
