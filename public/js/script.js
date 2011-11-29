@@ -1,3 +1,4 @@
+// tell Katya about circle
 // @TODO adujust credits
 // @TODO optimise images
 // @TODO create score screen
@@ -5,7 +6,6 @@
 
 $(document).ready(function loader() {
    
-    // titleChanger();
     // Try calling function and test again
     
     urlGetter();
@@ -13,6 +13,7 @@ $(document).ready(function loader() {
     answerDetect();
     scoreSorter(); 
 
+    titleChanger();
     hide_screens();
     show_screen($url);
 });
@@ -35,13 +36,14 @@ function urlGetter(){
 
 function titleChanger(){
         
+    inputGetter();
     switch($url) {
         case 'riddle1':
-            document.title = "Riddle Route :: Swithun";
+            document.title = "Riddle Route :: Riddle 1";
             break;
         
         case 'riddle2':
-            document.title = "Riddle Route :: Wykeham";
+            document.title = "Riddle Route :: Riddle 2";
             break;
 
         default:
@@ -207,6 +209,8 @@ function buttons(){
     $('.reset').click(function(){
         localStorage.clear(); 
         console.log('localStorage has be cleared');
+        hide_screens();
+        show_screen('map');
     });
     
     $('.score').click(function(){
