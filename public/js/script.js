@@ -5,6 +5,7 @@
 // 16th december - all workable
 
 
+
 $(document).ready(function loader() {
    
     urlGetter();
@@ -17,6 +18,12 @@ $(document).ready(function loader() {
     hide_screens();
     show_screen($url);
 });
+
+//urlGetter();
+//$('#'+$url).load(function preLoader() {
+    //hide_screens();
+    //show_screen($url);
+//});
 
 function hide_screens() {
     $('.screen').hide();
