@@ -221,7 +221,7 @@ function scoreTotal(){
         }else{
             $scoreValue = '0/10';
         };
-        console.log($scoreValue);
+        //console.log($scoreValue);
     };
 };
 
