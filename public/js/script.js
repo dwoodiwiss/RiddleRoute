@@ -1,10 +1,8 @@
-// @TODO optimise images || Partially done
+// @TODO refactor vars to make more sense, riddle1, riddle2
 // @TODO create score screen
 // @TODO check 3g loading, .ready?
 // @TODO bind #loading to .ready, bind the rest to .load($url)?
 // 16th december - all workable
-
-
 
 $(document).ready(function loader() {
    
@@ -57,7 +55,6 @@ function titleChanger(){
             document.title = "Home :: Riddle Route";
             break;
     };
-        
 };
 
 function inputGetter(){
@@ -76,8 +73,6 @@ function inputGetter(){
         default:
             // do nothing! 
     };
-    
-
 };
 
 function answerDetect(){
