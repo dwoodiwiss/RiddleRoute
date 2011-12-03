@@ -51,6 +51,10 @@ function titleChanger(){
             document.title = "Riddle Route :: Riddle 2";
             break;
 
+        case 'riddle3':
+            document.title = "Riddle Route :: Riddle 3";
+            break;
+
         default:
             document.title = "Home :: Riddle Route";
             break;
@@ -70,6 +74,11 @@ function inputGetter(){
             console.log('INPUT =', $inputValue);
             break;
 
+        case 'riddle3':
+            $inputValue = $('input[class="answer3"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
         default:
             // do nothing! 
     };
@@ -84,6 +93,11 @@ function answerDetect(){
             
         case 'riddle2':
             $answer = /Wykeham/i;
+            //console.log($answer);
+            break;
+
+        case 'riddle3':
+            $answer = /Austen/i;
             //console.log($answer);
             break;
 
@@ -165,6 +179,26 @@ function mapIcons(){
         }
     };
 
+    if (localStorage.riddle3 == undefined) {
+        // do nothing
+    }
+    else{
+        switch(localStorage.riddle3) {
+            case 'correct':
+                $('#spot3').removeClass('incorrect'); 
+                $('#spot3').addClass('correct');
+                break;
+                
+            case 'incorrect':
+                $('#spot3').removeClass('correct');
+                $('#spot3').addClass('incorrect');
+                break;
+
+            default:
+                $('#spot3').removeClass('correct');
+                $('#spot3').removeClass('incorrect');
+        }
+    };
 };
 
 function scoreSorter(){
@@ -174,7 +208,8 @@ function scoreSorter(){
 
         $score1 = $scoreData['riddle1'];
         $score2 = $scoreData['riddle2'];
-
+        $score3 = $scoreData['riddle3'];
+        
         switch($score1) {
             case 'correct':
                 $('#score1').addClass('correct');
@@ -195,6 +230,19 @@ function scoreSorter(){
             
             case 'incorrect':
                 $('#score2').addClass('incorrect');
+                break;
+
+            default:
+                // do nothing
+        };
+
+        switch($score3) {
+            case 'correct':
+                $('#score3').addClass('correct');
+                break;
+            
+            case 'incorrect':
+                $('#score3').addClass('incorrect');
                 break;
 
             default:
@@ -269,6 +317,11 @@ function buttons(){
                 show_screen('riddle2');
                 break;
 
+            case 'clue3':
+                hide_screens();
+                show_screen('riddle3');
+                break;
+
             default:
                 hide_screens();
                 show_screen('map');
@@ -320,8 +373,8 @@ function buttons(){
                     hide_screens();
                     show_screen('clue1');
                 };
-                
                 break;
+
             case 'riddle2':
                 if ($currentScreen == 'map') {
                     hide_screens();
@@ -329,6 +382,16 @@ function buttons(){
                 }else{
                     hide_screens();
                     show_screen('clue2');
+                };
+                break;
+
+            case 'riddle3':
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue3');
                 };
                 break;
 
