@@ -2,7 +2,6 @@
 // @TODO create score screen
 // @TODO check 3g loading, .ready?
 // @TODO bind #loading to .ready, bind the rest to .load($url)?
-// 16th december - all workable
 
 $(document).ready(function loader() {
    
