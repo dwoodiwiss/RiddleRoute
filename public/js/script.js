@@ -9,7 +9,7 @@ $(document).ready(function loader() {
     buttons();
     answerDetect();
     scoreSorter();
-    scoreTotal();
+    //scoreTotal();
 
     titleChanger();
     hide_screens();
@@ -69,7 +69,7 @@ function titleChanger(){
 };
 
 function inputGetter(){
-
+// RETURNS $inputValue
     switch($url) {
         case 'riddle1':
             $inputValue = $('input[class="answer1"]').val();
@@ -83,6 +83,41 @@ function inputGetter(){
 
         case 'riddle3':
             $inputValue = $('input[class="answer3"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
+        case 'riddle4':
+            $inputValue = $('input[class="answer4"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
+        case 'riddle5':
+            $inputValue = $('input[class="answer5"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
+        case 'riddle6':
+            $inputValue = $('input[class="answer6"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
+        case 'riddle7':
+            $inputValue = $('input[class="answer7"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
+        case 'riddle8':
+            $inputValue = $('input[class="answer8"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
+        case 'riddle9':
+            $inputValue = $('input[class="answer9"]').val();
+            console.log('INPUT =', $inputValue);
+            break;
+
+        case 'riddle10':
+            $inputValue = $('input[class="answer10"]').val();
             console.log('INPUT =', $inputValue);
             break;
 
@@ -290,7 +325,6 @@ function scoreTotal(){
         $result = localStorage.getItem('riddle'+(i));
 
         console.log($result);
-    };
 
     for (var i = 0; i < $result.length; i++) {
         if ($result == 'correct') {
@@ -301,7 +335,9 @@ function scoreTotal(){
         }else{
             $scoreValue = '0/10';
         };
-        //console.log($scoreValue);
+    };
+
+        console.log($scoreValue);
     };
 };
 
