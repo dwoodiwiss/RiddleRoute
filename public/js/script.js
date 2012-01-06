@@ -54,6 +54,14 @@ function titleChanger(){
             document.title = "Riddle Route :: Riddle 3";
             break;
 
+        case 'riddle4':
+            document.title = "Riddle Route :: Riddle 4";
+            break;
+
+        case 'riddle5':
+            document.title = "Riddle Route :: Riddle 5";
+            break;
+
         default:
             document.title = "Home :: Riddle Route";
             break;

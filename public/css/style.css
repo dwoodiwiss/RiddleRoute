@@ -229,6 +229,7 @@ body
 input
 {
    background-color: #efd189;
+   border: 1px solid black;
 
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
@@ -317,16 +318,24 @@ span
    margin-top: -247px;
 }
 
-.answer
-{
-   width: 155px;
-   margin-left: 50px;
-}
-
 #scoreResult
 {
    color: #FFFFFF;
 }
+
+/*  Input Locations
+---------------------------------------------------------------------- */
+
+.answer2
+{
+   margin-top: 13px;
+}
+
+.answer3
+{
+   margin-top: 10px;
+}
+
 
 /*  Buttons
 ---------------------------------------------------------------------- */
