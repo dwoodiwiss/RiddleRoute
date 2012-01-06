@@ -94,18 +94,43 @@ function inputGetter(){
 function answerDetect(){
     switch($url) {
         case 'riddle1':
-            $answer = /Swithun/i;
-            //console.log($answer);
+            $answer = /Window/i;
             break;
             
         case 'riddle2':
-            $answer = /Wykeham/i;
-            //console.log($answer);
+            $answer = /Austen/i;
             break;
 
         case 'riddle3':
-            $answer = /Austen/i;
-            //console.log($answer);
+            $answer = /Font/i;
+            break;
+
+        case 'riddle4':
+            $answer = /Crypt/i;
+            break;
+
+        case 'riddle5':
+            $answer = /Mortuary/i;
+            break;
+
+        case 'riddle6':
+            $answer = /Swithun/i;
+            break;
+
+        case 'riddle7':
+            $answer = /Walker/i;
+            break;
+
+        case 'riddle8':
+            $answer = /Fisherman/i;
+            break;
+
+        case 'riddle9':
+            $answer = /Bible/i;
+            break;
+
+        case 'riddle10':
+            $answer = /Wykeham/i;
             break;
 
         default:
