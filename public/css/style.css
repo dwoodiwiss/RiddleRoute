@@ -343,10 +343,10 @@ span
 .riddle
 {
    z-index: 1;
-   height: 100px;
+   height: 180px;
    width: 230px;
    position: absolute;
-   margin-top: 375px;
+   margin-top: 285px;
    margin-left: 50px;
    background-color: green;
    opacity: 0.4;
