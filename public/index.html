@@ -3,209 +3,217 @@
 <!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
 <!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
-
 <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
 
-    <title>Home :: Riddle Route</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+   <title>Home :: Riddle Route</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
 
-    <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+   <meta name="HandheldFriendly" content="True">
+   <meta name="MobileOptimized" content="320">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
-    <!-- For iPhone 4 with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-    <!-- For first-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-    <!-- For nokia devices: -->
-    <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+   <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
+   <!-- For iPhone 4 with high-resolution Retina display: -->
+   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+   <!-- For first-generation iPad: -->
+   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+   <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+   <!-- For nokia devices: -->
+   <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
 
-    <!--iOS web app, deletable if not needed -->
-    <!--the script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-    <link rel="apple-touch-startup-image" href="img/l/splash.png">
+   <!--iOS web app, deletable if not needed -->
+   <!--the script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+   <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+   <link rel="apple-touch-startup-image" href="img/l/splash.png">
 
-    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-    <meta http-equiv="cleartype" content="on">
+   <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+   <meta http-equiv="cleartype" content="on">
 
-    <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
+   <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+   <!-- Main Stylesheet -->
+   <link rel="stylesheet" href="css/style.css">
 
-    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-    <script src="js/libs/modernizr-custom.js"></script>
-    <!-- Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill -->
-    <script>Modernizr.mq('(min-width:0)') || document.write('<script src="js/libs/respond.min.js">\x3C/script>')</script>
-    </head>
+   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+   <script src="js/libs/modernizr-custom.js"></script>
+   <!-- Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill -->
+   <script>Modernizr.mq('(min-width:0)') || document.write('<script src="js/libs/respond.min.js">\x3C/script>')</script>
+   </head>
 
-    <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
+   <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
-        <div id="container">
+      <div id="container">
+         <!-- load screen -->
+         <div class="screen" id="loading">
+            <h2>Riddle Route</h2>
+            <h1>LOADING...</h1> 
+         </div>
+         
+         <!-- main screens -->
+         <div id="main" role="main">
+            <!-- riddle1 -->
+            <div class="screen" id="riddle1">
 
-            <div class="screen" id="loading">
-                <h2>Riddle Route</h2>
-                <h1>LOADING...</h1> 
+               <div class="map"></div>
+               <div class="clue"></div>
+
+               <img src="img/optimised/finalpages/8aSwithunriddle.jpg">
+
+               <form class="answerForm" action="" method="get" accept-charset="utf-8">
+                  <input class="answer1" type="text" name="answer" value="">
+               </form>
+            </div>
+            
+            <!-- clue1 -->
+            <div class="screen" id="clue1">
+               <div class="map"></div>
+               <img src="img/optimised/finalpages/8Swithunkey.jpg">
             </div>
 
-            <div id="main" role="main">
-                <div class="screen" id="riddle1">
+            <!-- riddle2 -->
+            <div class="screen" id="riddle2">
 
-                    <!-- Shorthand Buttons -->
-                    <div class="map"></div>
-                    <div class="clue"></div>
+               <div class="map"></div>
+               <div class="clue"></div>
 
-                    <img src="img/optimised/finalpages/8aSwithunriddle.jpg">
+               <img src="img/optimised/finalpages/2aBishopriddle1.jpg">
 
-                    <form class="answerForm" action="" method="get" accept-charset="utf-8">
-                        <input class="answer1" type="text" name="answer" value="">
-                    </form>
-                </div>
+               <form class="answerForm" action="" method="get" accept-charset="utf-8">
+                  <input class="answer2" type="text" name="answer" value="">
+               </form>
+            </div>
 
-                <div class="screen" id="clue1">
-                    <div class="map"></div>
-                    <img src="img/optimised/finalpages/8Swithunkey.jpg">
-                </div>
-                
-                <div class="screen" id="riddle2">
+            <!-- clue2 -->
+            <div class="screen" id="clue2">
+               <div class="map"></div>
+               <img src="img/optimised/finalpages/2Bishopkey.jpg">
+            </div>
 
-                    <!-- Shorthand Buttons -->
-                    <div class="map"></div>
-                    <div class="clue"></div>
+            <!-- riddle3 -->
+            <div class="screen" id="riddle3">
 
-                    <img src="img/optimised/finalpages/2aBishopriddle1.jpg">
+               <div class="map"></div>
+               <div class="clue"></div>
 
-                    <form class="answerForm" action="" method="get" accept-charset="utf-8">
-                        <input class="answer2" type="text" name="answer" value="">
-                    </form>
-                </div>
+               <img src="img/optimised/finalpages/7aJAriddle.jpg">
 
-                <div class="screen" id="clue2">
-                    <div class="map"></div>
-                    <img src="img/optimised/finalpages/2Bishopkey.jpg">
-                </div>
+               <form class="answerForm" action="" method="get" accept-charset="utf-8">
+                  <input class="answer3" type="text" name="answer" value="">
+               </form>
+            </div>
 
-                <div class="screen" id="riddle3">
+            <!-- clue3 -->
+            <div class="screen" id="clue3">
+               <div class="map"></div>
+               <img src="img/optimised/finalpages/7JAkey.jpg">
+            </div>
 
-                    <!-- Shorthand Buttons -->
-                    <div class="map"></div>
-                    <div class="clue"></div>
+            <!-- incorrect screen -->
+            <div class="screen" id="incorrect">
+               <div class="riddle"></div>
 
-                    <img src="img/optimised/finalpages/7aJAriddle.jpg">
+               <img src="img/optimised/supportPages/wrong.jpg">
+            </div>
 
-                    <form class="answerForm" action="" method="get" accept-charset="utf-8">
-                        <input class="answer3" type="text" name="answer" value="">
-                    </form>
-                </div>
+            <!-- correct screen -->
+            <div class="screen" id="correct">
+               <div class="riddle"></div>
 
-                <div class="screen" id="clue3">
-                    <div class="map"></div>
-                    <img src="img/optimised/finalpages/7JAkey.jpg">
-                </div>
+               <img src="img/optimised/supportPages/right.jpg">
+            </div>
 
-                <div class="screen" id="incorrect">
-                    <!-- Shorthand Buttons -->
-                    <div class="riddle"></div>
+            <!-- default map screen -->
+            <div class="screen" id="map">
+               <div class="map"></div> 
+               <div class="howToPlay"></div>
 
-                    <img src="img/optimised/supportPages/wrong.jpg">
-                </div>
+               <div id="spot1">
+                  <!-- Swithun --> 
+               </div>
 
-                <div class="screen" id="correct">
-                    <!-- Shorthand Buttons -->
-                    <div class="riddle"></div>
+               <div id="spot2">
+                  <!-- Wykeham -->
+               </div>
 
-                    <img src="img/optimised/supportPages/right.jpg">
-                </div>
-                 
-                <div class="screen" id="map">
-                    <div class="map"></div> 
-                    <div class="howToPlay"></div>
-                    
-                    <div id="spot1">
-                        <!-- Swithun --> 
-                    </div>
+               <img src="img/optimised/supportPages/NewPlan.jpg">
+            </div>
 
-                    <div id="spot2">
-                        <!-- Wykeham -->
-                    </div>
+            <!-- alternative map screen -->
+            <div class="screen" id="map2">
+               <div class="howToPlay"></div>
 
-                    <img src="img/optimised/supportPages/NewPlan.jpg">
-                </div>
+               <div id="spot1">
+                  <!-- Swithun --> 
+               </div>
 
-                <div class="screen" id="map2">
-                    <div class="howToPlay"></div>
-                    
-                    <div id="spot1">
-                        <!-- Swithun --> 
-                    </div>
+               <div id="spot2">
+                  <!-- Wykeham -->
+               </div>
 
-                    <div id="spot2">
-                        <!-- Wykeham -->
-                    </div>
+               <img src="img/optimised/supportPages/NewPlanArrowless.jpg">
+            </div>
 
-                    <img src="img/optimised/supportPages/NewPlanArrowless.jpg">
-                </div>
+            <!-- how to play screen -->
+            <div class="screen" id="howToPlay">
+               <div class="riddle"></div>
+               <img src="img/optimised/supportPages/howtoplay.jpg">
+            </div>
+            
+            <!-- finish screen -->
+            <div class="screen" id="wellDone">
+               <div class="score"></div>
+               <img src="img/optimised/supportPages/welldone.jpg">
+            </div>
+            
+            <!-- score screen -->
+            <div class="screen" id="score">
 
-                <div class="screen" id="howToPlay">
-                     <div class="riddle"></div>
-                    <img src="img/optimised/supportPages/howtoplay.jpg">
-                </div>
+               <div id="scoreResult">
+                  <div class="reset"></div>
+                  <div id="totalScore"></div>
 
-                <div class="screen" id="wellDone">
-                    <div class="score"></div>
-                    <img src="img/optimised/supportPages/welldone.jpg">
-                </div>
+                  <div id="score1">
+                  </div>
+                  <div id="score2">
+                  </div>
 
-                <div class="screen" id="score">
+                  <img src="img/optimised/supportPages/YourscoreCertificate.jpg">
+               </div>
 
-                    <div id="scoreResult">
-                        <div class="reset"></div>
-                        <div id="totalScore"></div>
-                        
-                        <div id="score1">
-                        </div>
-                        <div id="score2">
-                        </div>
+            </div>
 
-                        <img src="img/optimised/supportPages/YourscoreCertificate.jpg">
-                    </div>
+         </div> <!-- end of main-->
 
-                </div>
-
-            </div> <!-- end of main-->
-
-            <footer>
-                <!--<span>Riddle Route 2011</span>-->
-            </footer>
-        </div> <!--! end of #container -->
+         <footer>
+         <!--<span>Riddle Route 2011</span>-->
+         </footer>
+      </div> <!--! end of #container -->
 
 
-        <!-- JavaScript at the bottom for fast page loading -->
+      <!-- JavaScript at the bottom for fast page loading -->
 
-        <script src="js/jquery-1.7.1.min.js"></script>
+      <script src="js/jquery-1.7.1.min.js"></script>
 
-        <!-- Darren's Javascript -->
-        <script src="js/script.js"></script>
+      <!-- Darren's Javascript -->
+      <script src="js/script.js"></script>
 
-        <!-- scripts concatenated and minified via ant build script -->
-        <script src="js/mylibs/helper.js"></script>
-        <!-- end concatenated and minified scripts-->
+      <!-- scripts concatenated and minified via ant build script -->
+      <script src="js/mylibs/helper.js"></script>
+      <!-- end concatenated and minified scripts-->
 
-        <script>
-            // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
-            MBP.scaleFix();
-        </script>
+      <script>
+         // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
+         MBP.scaleFix();
+      </script>
 
-        <!-- Debugger - remove for production -->
-        <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
+      <!-- Debugger - remove for production -->
+      <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
 
-    </body>
+   </body>
 </html>
