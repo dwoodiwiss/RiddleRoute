@@ -266,6 +266,154 @@ function mapIcons(){
                 $('#spot3').removeClass('incorrect');
         }
     };
+   
+    if (localStorage.riddle4 == undefined) {
+        // do nothing
+    }
+    else{
+        switch(localStorage.riddle4) {
+            case 'correct':
+                $('#spot4').removeClass('incorrect'); 
+                $('#spot4').addClass('correct');
+                break;
+                
+            case 'incorrect':
+                $('#spot4').removeClass('correct');
+                $('#spot4').addClass('incorrect');
+                break;
+
+            default:
+                $('#spot4').removeClass('correct');
+                $('#spot4').removeClass('incorrect');
+        }
+    };
+
+    if (localStorage.riddle5 == undefined) {
+        // do nothing
+    }
+    else{
+        switch(localStorage.riddle5) {
+            case 'correct':
+                $('#spot5').removeClass('incorrect'); 
+                $('#spot5').addClass('correct');
+                break;
+                
+            case 'incorrect':
+                $('#spot5').removeClass('correct');
+                $('#spot5').addClass('incorrect');
+                break;
+
+            default:
+                $('#spot5').removeClass('correct');
+                $('#spot5').removeClass('incorrect');
+        }
+    };
+
+    if (localStorage.riddle6 == undefined) {
+        // do nothing
+    }
+    else{
+        switch(localStorage.riddle6) {
+            case 'correct':
+                $('#spot6').removeClass('incorrect'); 
+                $('#spot6').addClass('correct');
+                break;
+                
+            case 'incorrect':
+                $('#spot6').removeClass('correct');
+                $('#spot6').addClass('incorrect');
+                break;
+
+            default:
+                $('#spot6').removeClass('correct');
+                $('#spot6').removeClass('incorrect');
+        }
+    };
+
+    if (localStorage.riddle7 == undefined) {
+        // do nothing
+    }
+    else{
+        switch(localStorage.riddle7) {
+            case 'correct':
+                $('#spot7').removeClass('incorrect'); 
+                $('#spot7').addClass('correct');
+                break;
+                
+            case 'incorrect':
+                $('#spot7').removeClass('correct');
+                $('#spot7').addClass('incorrect');
+                break;
+
+            default:
+                $('#spot7').removeClass('correct');
+                $('#spot7').removeClass('incorrect');
+        }
+    };
+
+    if (localStorage.riddle8 == undefined) {
+        // do nothing
+    }
+    else{
+        switch(localStorage.riddle8) {
+            case 'correct':
+                $('#spot8').removeClass('incorrect'); 
+                $('#spot8').addClass('correct');
+                break;
+                
+            case 'incorrect':
+                $('#spot8').removeClass('correct');
+                $('#spot8').addClass('incorrect');
+                break;
+
+            default:
+                $('#spot8').removeClass('correct');
+                $('#spot8').removeClass('incorrect');
+        }
+    };
+
+    if (localStorage.riddle9 == undefined) {
+        // do nothing
+    }
+    else{
+        switch(localStorage.riddle9) {
+            case 'correct':
+                $('#spot9').removeClass('incorrect'); 
+                $('#spot9').addClass('correct');
+                break;
+                
+            case 'incorrect':
+                $('#spot9').removeClass('correct');
+                $('#spot9').addClass('incorrect');
+                break;
+
+            default:
+                $('#spot9').removeClass('correct');
+                $('#spot9').removeClass('incorrect');
+        }
+    };
+
+    if (localStorage.riddle10 == undefined) {
+        // do nothing
+    }
+    else{
+        switch(localStorage.riddle10) {
+            case 'correct':
+                $('#spot10').removeClass('incorrect'); 
+                $('#spot10').addClass('correct');
+                break;
+                
+            case 'incorrect':
+                $('#spot10').removeClass('correct');
+                $('#spot10').addClass('incorrect');
+                break;
+
+            default:
+                $('#spot10').removeClass('correct');
+                $('#spot10').removeClass('incorrect');
+        }
+    };
+
 };
 
 function scoreSorter(){

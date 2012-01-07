@@ -19,7 +19,7 @@ $answer = /Swithun/i;
 #7	William Walker
 $answer = /Walker/i;
 
-#8	Fisherman's Chapel
+#8	Fishermans Chapel
 $answer = /Fisherman/i;
 
 #9	Winchester Bible

@@ -416,8 +416,8 @@ span
 #spot1
 {
    z-index: 1;
-   margin-left: 150px;
-   margin-top: 65px;
+   margin-left: 145px;
+   margin-top: 415px;
    position: absolute;
    height: 30px;
    width: 30px;
@@ -432,14 +432,142 @@ span
 #spot2
 {
    z-index: 1;
-   margin-left: 172px;
-   margin-top: 345px;
+   margin-left: 120px;
+   margin-top: 365px;
    position: absolute;
    height: 30px;
    width: 30px;
 }
 
 #spot2 img
+{
+   height: 100%;
+   width: 100%;
+}
+
+#spot3
+{
+   z-index: 1;
+   margin-left: 130px;
+   margin-top: 340px;
+   position: absolute;
+   height: 30px;
+   width: 30px;
+}
+
+#spot3 img
+{
+   height: 100%;
+   width: 100%;
+}
+
+#spot4
+{
+   z-index: 1;
+   margin-left: 90px;
+   margin-top: 205px;
+   position: absolute;
+   height: 30px;
+   width: 30px;
+}
+
+#spot4 img
+{
+   height: 100%;
+   width: 100%;
+}
+
+#spot5
+{
+   z-index: 1;
+   margin-left: 130px;
+   margin-top: 155px;
+   position: absolute;
+   height: 30px;
+   width: 30px;
+}
+
+#spot5 img
+{
+   height: 100%;
+   width: 100%;
+}
+
+#spot6
+{
+   z-index: 1;
+   margin-left: 152px;
+   margin-top: 98px;
+   position: absolute;
+   height: 30px;
+   width: 30px;
+}
+
+#spot6 img
+{
+   height: 100%;
+   width: 100%;
+}
+
+#spot7
+{
+   z-index: 1;
+   margin-left: 175px;
+   margin-top: 77px;
+   position: absolute;
+   height: 30px;
+   width: 30px;
+}
+
+#spot7 img
+{
+   height: 100%;
+   width: 100%;
+}
+
+#spot8
+{
+   z-index: 1;
+   margin-left: 225px;
+   margin-top: 190px;
+   position: absolute;
+   height: 30px;
+   width: 30px;
+}
+
+#spot8 img
+{
+   height: 100%;
+   width: 100%;
+}
+
+#spot9
+{
+   z-index: 1;
+   margin-left: 220px;
+   margin-top: 220px;
+   position: absolute;
+   height: 30px;
+   width: 30px;
+}
+
+#spot9 img
+{
+   height: 100%;
+   width: 100%;
+}
+
+#spot10
+{
+   z-index: 1;
+   margin-left: 175px;
+   margin-top: 380px;
+   position: absolute;
+   height: 30px;
+   width: 30px;
+}
+
+#spot10 img
 {
    height: 100%;
    width: 100%;
