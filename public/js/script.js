@@ -8,7 +8,7 @@ $(document).ready(function loader() {
     urlGetter();
     buttons();
     answerDetect();
-    scoreSorter();
+    //scoreSorter();
     //scoreTotal();
 
     titleChanger();
@@ -417,7 +417,7 @@ function mapIcons(){
 };
 
 function scoreSorter(){
-        
+// CURRENTLY UNUSED
         // window.localStorage?
         $scoreData = window.localStorage;
 
@@ -466,7 +466,7 @@ function scoreSorter(){
 };
 
 function scoreTotal(){
-
+// UNUSED AT CURRENT
     $result = '';
     for (var i = 1; i < localStorage.length +1; i++) {
         
@@ -536,6 +536,41 @@ function buttons(){
             case 'clue3':
                 hide_screens();
                 show_screen('riddle3');
+                break;
+
+            case 'clue4':
+                hide_screens();
+                show_screen('riddle4');
+                break;
+
+            case 'clue5':
+                hide_screens();
+                show_screen('riddle5');
+                break;
+
+            case 'clue6':
+                hide_screens();
+                show_screen('riddle6');
+                break;
+
+            case 'clue7':
+                hide_screens();
+                show_screen('riddle7');
+                break;
+
+            case 'clue8':
+                hide_screens();
+                show_screen('riddle8');
+                break;
+
+            case 'clue9':
+                hide_screens();
+                show_screen('riddle9');
+                break;
+
+            case 'clue10':
+                hide_screens();
+                show_screen('riddle10');
                 break;
 
             default:
@@ -608,6 +643,76 @@ function buttons(){
                 }else{
                     hide_screens();
                     show_screen('clue3');
+                };
+                break;
+
+            case 'riddle4':
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue4');
+                };
+                break;
+
+            case 'riddle5':
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue5');
+                };
+                break;
+
+            case 'riddle6':
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue6');
+                };
+                break;
+
+            case 'riddle7':
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue7');
+                };
+                break;
+
+            case 'riddle8':
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue8');
+                };
+                break;
+
+            case 'riddle9':
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue9');
+                };
+                break;
+
+            case 'riddle10':
+                if ($currentScreen == 'map') {
+                    hide_screens();
+                    show_screen('wellDone');
+                }else{
+                    hide_screens();
+                    show_screen('clue10');
                 };
                 break;
 
