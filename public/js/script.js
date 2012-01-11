@@ -508,6 +508,11 @@ function buttons(){
         show_screen('howToPlay');
     });
 
+    $('#getCert').click(function(){
+        hide_screens();
+        show_screen('getCertificate');
+    });
+
     $('.map').click(function(){
 
         mapIcons();
