@@ -14,7 +14,14 @@ $(document).ready(function loader() {
 
    titleChanger();
    hide_screens();
+   show_screen('loading');
+});
+
+$(window).load(function() {
+   
+   hide_screens();
    show_screen($url);
+
 });
 
 //urlGetter();
