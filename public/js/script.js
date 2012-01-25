@@ -15,10 +15,16 @@ $(document).ready(function loader() {
    titleChanger();
    hide_screens();
    show_screen('loading');
+
+   // @TODO TEST THIS CODE
+   $('input').css('display', 'none');
+
 });
 
 $(window).load(function() {
    
+   // @TODO TEST THIS CODE
+   $('input').css('display', 'inline');
    hide_screens();
    show_screen($url);
 
@@ -206,6 +212,9 @@ $(".answerForm").submit(function() {
       show_screen('correct');
 
       scoreStore();
+      
+      // poor attempt at getting iOS keyboard to minimise after input
+      //$('.screen').focus();
 
       return false;
    }
