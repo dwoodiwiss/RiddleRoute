@@ -1,7 +1,5 @@
 // @TODO refactor vars to make more sense, riddle1, riddle2
 // @TODO create score screen
-// @TODO check 3g loading, .ready?
-// @TODO bind #loading to .ready, bind the rest to .load($url)?
 
 $(document).ready(function loader() {
 
@@ -36,6 +34,11 @@ $(window).load(function() {
 //show_screen($url);
 //});
 
+function hideKeyboard() {
+    document.activeElement.blur();
+    $("input").blur();
+};
+
 function inputReset() {
 
    var el = $('input[type=text], textarea');
@@ -57,7 +60,6 @@ function hide_screens() {
 
 function show_screen(id) {
    $('#'+id).show();
-
    $currentScreen = id;
    console.log('SCREEN =', $currentScreen);
 };
@@ -210,7 +212,8 @@ $(".answerForm").submit(function() {
    if ($inputValue.match($answer)) {
       hide_screens();
       show_screen('correct');
-
+      
+      hideKeyboard();
       scoreStore();
       
       // poor attempt at getting iOS keyboard to minimise after input
@@ -221,7 +224,8 @@ $(".answerForm").submit(function() {
    else{
       hide_screens();
       show_screen('incorrect');
-
+      
+      hideKeyboard();
       scoreStore();
 
       return false;
