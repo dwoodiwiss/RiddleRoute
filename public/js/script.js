@@ -25,7 +25,7 @@ $(window).load(function() {
    $('input').css('display', 'inline');
    hide_screens();
    show_screen($url);
-
+   
 });
 
 //urlGetter();

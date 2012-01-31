@@ -224,10 +224,13 @@ body
    background-color: #CCCCCC;
    color: #2c2c2c;
    text-align: center;
+   z-index: 1;
 }
 
 input
 {
+   display: none;
+   //z-index: 0;
    position: relative;
    background-color: #efd189;
    border: 1px solid #191970;
