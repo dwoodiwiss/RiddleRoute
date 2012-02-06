@@ -9,6 +9,7 @@ $(document).ready(function loader() {
    //scoreSorter();
    //scoreTotal();
    inputReset();
+   detectStandAlone();
 
    titleChanger();
    hide_screens();
@@ -27,6 +28,22 @@ $(window).load(function() {
    show_screen($url);
    
 });
+
+// webapp detection
+// WORKING 
+function detectStandAlone() {
+   $standalone = window.navigator.standalone;
+
+   console.log($standalone);
+   
+   if ($standalone == true) {
+      $('input').css('background-color', 'black');
+   }else{
+      console.log('not standalone');
+   }
+
+};
+
 
 //urlGetter();
 //$('#'+$url).load(function preLoader() {
