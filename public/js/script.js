@@ -37,9 +37,9 @@ function detectStandAlone() {
    console.log($standalone);
    
    if ($standalone == true) {
-      $('input').css('background-color', 'black');
+      //$('input').css('background-color', 'black');
    }else{
-      console.log('not standalone');
+      //console.log('not standalone');
    }
 
 };
