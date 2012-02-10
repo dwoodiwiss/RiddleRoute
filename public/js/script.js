@@ -1,6 +1,5 @@
-// @TODO create score screen
 // @TODO updated readme.md and push project to github
-// @TODO create credit screen
+// @TODO create credit screen that spans $url == wellDone
 // @TODO add icons to wellDone screen
 
 $(document).ready(function loader() {
@@ -259,17 +258,11 @@ function scoreTotal(){
     $a.push(localStorage.getItem(key));
   }
   $answerTotal = $a;
-  console.log($answerTotal);
+  //console.log($answerTotal);
   scoreSetter();
 };
 
 function scoreSetter(){
-
-  //for ($i in $answerTotal){
-    //if ($i.match(/correct/g)) {
-      //console.log('correct!');
-    //}
-  //}
 
   count = {}
   for(var i = 0; i < $answerTotal.length; i++){
@@ -278,10 +271,8 @@ function scoreSetter(){
  
   $TOTAL = count.correct;
   console.log($TOTAL);
-
-
-  $
-
+  
+  $('#dynamicScore').text($TOTAL + '/10');
 
 };
 

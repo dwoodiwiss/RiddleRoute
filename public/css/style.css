@@ -677,6 +677,16 @@ span
    position: absolute;
 }
 
+#dynamicScore
+{
+  color: #2c2c2c;
+  position: absolute;
+  margin-left: -6px;
+  margin-top: 75px;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
 
 /*
  * media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/the-style
