@@ -248,6 +248,7 @@ $(".answerForm").submit(function() {
   };
 });
 
+// do if localStorage != empty 
 function scoreStore(){
   localStorage.setItem($url, $currentScreen);
 };
@@ -264,8 +265,19 @@ function scoreTotal(){
 
 function scoreSetter(){
 
-  console.log(jQuery.inArray('correct', $answerTotal));
-  //$inArray("correct", $answerTotal);
+  //for ($i in $answerTotal){
+    //if ($i.match(/correct/g)) {
+      //console.log('correct!');
+    //}
+  //}
+
+  count = {}
+  for(var i = 0; i < $answerTotal.length; i++){
+    count[$answerTotal[i]] = (count[$answerTotal[i]] || 0) + 1
+  }
+ 
+  $TOTAL = count.correct;
+  console.log($TOTAL);
 
 };
 
