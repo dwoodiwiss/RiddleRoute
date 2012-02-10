@@ -8,7 +8,7 @@ $(document).ready(function loader() {
   buttons();
   answerDetect();
   //scoreSorter();
-  //scoreTotal();
+  scoreTotal();
   inputReset();
   detectStandAlone();
 
@@ -249,23 +249,19 @@ $(".answerForm").submit(function() {
 
 function scoreStore(){
   localStorage.setItem($url, $currentScreen);
- 
-  //for (var key in localStorage){
-    //$answerTotal = localStorage.getItem(key);
-    //$a = Array($answerTotal);
-  //}
-
-  for(var key in localStorage)
-  {
-    console.log(key);
-  } 
-
-    //console.log($a);  
-
 };
 
-
 function scoreTotal(){
+  for (var key in localStorage){
+    $answerTotal = localStorage.getItem(key);
+    $a = Array($answerTotal);
+    console.log($a);  
+  }
+
+  //for(var key in localStorage)
+  //{
+  //console.log(key);
+  //}
 
 };
 
