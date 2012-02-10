@@ -260,7 +260,7 @@ function scoreStore(){
     console.log(key);
   } 
 
-    console.log($a);  
+    //console.log($a);  
 
 };
 
