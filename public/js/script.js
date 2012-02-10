@@ -270,6 +270,11 @@ function scoreSetter(){
   }
  
   $TOTAL = count.correct;
+
+  if ($TOTAL == 'undefined') {
+    $TOTAL = 0;
+  }
+
   console.log($TOTAL);
   
   $('#dynamicScore').text($TOTAL + '/10');
