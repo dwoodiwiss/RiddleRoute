@@ -80,7 +80,7 @@ function hide_screens() {
 function show_screen(id) {
   $('#'+id).show();
   $currentScreen = id;
-  //console.log('SCREEN =', $currentScreen);
+  console.log('SCREEN =', $currentScreen);
 };
 
 function urlGetter(){
@@ -278,6 +278,10 @@ function scoreSetter(){
  
   $TOTAL = count.correct;
   console.log($TOTAL);
+
+
+  $
+
 
 };
 
