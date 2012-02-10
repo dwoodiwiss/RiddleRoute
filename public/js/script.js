@@ -257,7 +257,6 @@ function scoreTotal(){
   for (var key in localStorage){
     $a.push(localStorage.getItem(key));
   }
-
   $answerTotal = $a;
   console.log($answerTotal);
   scoreSetter();
@@ -265,7 +264,8 @@ function scoreTotal(){
 
 function scoreSetter(){
 
-
+  console.log(jQuery.inArray('correct', $answerTotal));
+  //$inArray("correct", $answerTotal);
 
 };
 
