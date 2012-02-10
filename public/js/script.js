@@ -1,5 +1,7 @@
 // @TODO create score screen
 // @TODO updated readme.md and push project to github
+// @TODO create credit screen
+// @TODO add icons to wellDone screen
 
 $(document).ready(function loader() {
 
@@ -265,7 +267,7 @@ function scoreSetter(){
 
 
 
-}
+};
 
 function mapIcons(){
 
