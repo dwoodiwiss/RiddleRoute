@@ -1,4 +1,3 @@
-// @TODO refactor vars to make more sense, riddle1, riddle2
 // @TODO create score screen
 // @TODO updated readme.md and push project to github
 
@@ -252,18 +251,21 @@ function scoreStore(){
 };
 
 function scoreTotal(){
+  $a = Array();
   for (var key in localStorage){
-    $answerTotal = localStorage.getItem(key);
-    $a = Array($answerTotal);
-    console.log($a);  
+    $a.push(localStorage.getItem(key));
   }
 
-  //for(var key in localStorage)
-  //{
-  //console.log(key);
-  //}
-
+  $answerTotal = $a;
+  console.log($answerTotal);
+  scoreSetter();
 };
+
+function scoreSetter(){
+
+
+
+}
 
 function mapIcons(){
 
