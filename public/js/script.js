@@ -264,19 +264,17 @@ function scoreTotal(){
 
 function scoreSetter(){
 
-  count = {}
+  count = {};
   for(var i = 0; i < $answerTotal.length; i++){
     count[$answerTotal[i]] = (count[$answerTotal[i]] || 0) + 1
   }
- 
-  $TOTAL = count.correct;
 
-  if ($TOTAL == 'undefined') {
-    $TOTAL = 0;
-  }
+  $TOTAL = count.correct;
+  if (typeof $TOTAL === "undefined") 
+    $TOTAL = '0';
 
   console.log($TOTAL);
-  
+
   $('#dynamicScore').text($TOTAL + '/10');
 
 };
