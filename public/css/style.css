@@ -681,8 +681,8 @@ span
 {
   color: #2c2c2c;
   position: absolute;
-  padding-left: 152px;
-  margin-left: 0px;
+  /*padding-left: 152px;*/
+  margin-left: -15px;
   margin-top: 75px;
   font-size: 14px;
   font-weight: 800;
