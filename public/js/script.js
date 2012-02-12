@@ -7,7 +7,7 @@ $(document).ready(function loader() {
   urlGetter();
   buttons();
   answerDetect();
-  //scoreSorter();
+  scoreSorter();
   scoreTotal();
   inputReset();
   detectStandAlone();
@@ -494,13 +494,21 @@ function mapIcons(){
 };
 
 function scoreSorter(){
-  // CURRENTLY UNUSED
   // window.localStorage?
+  // incomplete
   $scoreData = window.localStorage;
 
   $score1 = $scoreData['riddle1'];
   $score2 = $scoreData['riddle2'];
   $score3 = $scoreData['riddle3'];
+  $score4 = $scoreData['riddle4'];
+  $score5 = $scoreData['riddle5'];
+  $score6 = $scoreData['riddle6'];
+  $score7 = $scoreData['riddle7'];
+  $score8 = $scoreData['riddle8'];
+  $score9 = $scoreData['riddle9'];
+  $score10 = $scoreData['riddle10'];
+  // prepare for more horrible code repetition
 
   switch($score1) {
     case 'correct':
