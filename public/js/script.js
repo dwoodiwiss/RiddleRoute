@@ -2,6 +2,7 @@
 // @TODO create credit screen that spans $url == wellDone
 // @TODO add icons to wellDone screen
 // @TODO add support for iPad
+// @TODO add back button to credits screen
 
 $(document).ready(function loader() {
 
