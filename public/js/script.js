@@ -1,6 +1,7 @@
 // @TODO updated readme.md and push project to github
 // @TODO create credit screen that spans $url == wellDone
 // @TODO add icons to wellDone screen
+// @TODO add support for iPad
 
 $(document).ready(function loader() {
 
