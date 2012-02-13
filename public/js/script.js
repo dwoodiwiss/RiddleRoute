@@ -80,7 +80,7 @@ function hide_screens() {
 function show_screen(id) {
   $('#'+id).show();
   $currentScreen = id;
-  console.log('SCREEN =', $currentScreen);
+  console.log('screen =', $currentScreen);
 };
 
 function urlGetter(){
@@ -664,6 +664,11 @@ function buttons(){
   $('#getCert').click(function(){
     hide_screens();
     show_screen('getCertificate');
+  });
+
+  $('#getCredits').click(function(){
+    hide_screens();
+    show_screen('credits');
   });
 
   $('.map').click(function(){
