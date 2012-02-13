@@ -549,6 +549,97 @@ function scoreSorter(){
     default:
       // do nothing
   };
+
+  switch($score4) {
+    case 'correct':
+      $('#score4').addClass('correct');
+      break;
+
+    case 'incorrect':
+      $('#score4').addClass('incorrect');
+      break;
+
+    default:
+      // do nothing
+  };
+
+  switch($score5) {
+    case 'correct':
+      $('#score5').addClass('correct');
+      break;
+
+    case 'incorrect':
+      $('#score5').addClass('incorrect');
+      break;
+
+    default:
+      // do nothing
+  };
+
+  switch($score6) {
+    case 'correct':
+      $('#score6').addClass('correct');
+      break;
+
+    case 'incorrect':
+      $('#score6').addClass('incorrect');
+      break;
+
+    default:
+      // do nothing
+  };
+
+  switch($score7) {
+    case 'correct':
+      $('#score7').addClass('correct');
+      break;
+
+    case 'incorrect':
+      $('#score7').addClass('incorrect');
+      break;
+
+    default:
+      // do nothing
+  };
+
+  switch($score8) {
+    case 'correct':
+      $('#score8').addClass('correct');
+      break;
+
+    case 'incorrect':
+      $('#score8').addClass('incorrect');
+      break;
+
+    default:
+      // do nothing
+  };
+
+  switch($score9) {
+    case 'correct':
+      $('#score9').addClass('correct');
+      break;
+
+    case 'incorrect':
+      $('#score9').addClass('incorrect');
+      break;
+
+    default:
+      // do nothing
+  };
+
+  switch($score10) {
+    case 'correct':
+      $('#score10').addClass('correct');
+      break;
+
+    case 'incorrect':
+      $('#score10').addClass('incorrect');
+      break;
+
+    default:
+      // do nothing
+  };
 };
 
 function buttons(){

@@ -661,7 +661,7 @@ span
 ---------------------------------------------------------------------- */
 #score1
 {
-  margin-top: 381px;
+  margin-top: 90px;
   margin-left: 50px;
   height: 30px;
   width: 30px;
@@ -670,8 +670,80 @@ span
 
 #score2
 {
-  margin-top: 355px;
-  margin-left: 52px;
+  margin-top: 120px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+#score3
+{
+  margin-top: 155px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+#score4
+{
+  margin-top: 186px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+#score5
+{
+  margin-top: 220px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+#score6
+{
+  margin-top: 254px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+#score7
+{
+  margin-top: 286px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+#score8
+{
+  margin-top: 318px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+#score9
+{
+  margin-top: 348px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+}
+
+#score10
+{
+  margin-top: 379px;
+  margin-left: 50px;
   height: 30px;
   width: 30px;
   position: absolute;
