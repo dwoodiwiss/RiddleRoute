@@ -486,7 +486,7 @@ span
 
 .getCredits
 {
-  background-color: blue;
+  /*background-color: blue;*/
   height: 50px;
   width: 320px;
   position: absolute;
@@ -782,6 +782,26 @@ span
   font-size: 14px;
   font-weight: 800;
   font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+
+/*  Credits Screen
+---------------------------------------------------------------------- */
+#creditContainer
+{
+  padding: 25px; 
+}
+
+#roles
+{
+  text-align: left;
+  font-weight: 300;
+  font-size: italic;
+}
+
+#creditContainer span
+{
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /*
