@@ -666,7 +666,7 @@ function buttons(){
     show_screen('getCertificate');
   });
 
-  $('#getCredits').click(function(){
+  $('.getCredits').click(function(){
     hide_screens();
     show_screen('credits');
   });
