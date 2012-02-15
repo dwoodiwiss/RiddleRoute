@@ -1,8 +1,7 @@
 // @TODO updated readme.md and push project to github
-// @TODO create credit screen that spans $url == wellDone
-// @TODO add icons to wellDone screen
 // @TODO add support for iPad
 // @TODO add back button to credits screen
+// @TODO investigate localStorage alternative
 
 $(document).ready(function loader() {
 
