@@ -685,7 +685,6 @@ function buttons(){
       case 'credits':
         hide_screens();
         show_screen('score');  
-        console.log('map was clicked!');
       break;
 
       case 'map':
