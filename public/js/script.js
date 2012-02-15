@@ -675,12 +675,19 @@ function buttons(){
 
     mapIcons();
 
-    if ($url == 'wellDone') {
-      hide_screens();
-      show_screen('score');
-    };
+    //if ($url == 'wellDone') {
+      //hide_screens();
+      //show_screen('score');
+    //};
 
     switch($currentScreen) {
+
+      case 'credits':
+        hide_screens();
+        show_screen('score');  
+        console.log('map was clicked!');
+      break;
+
       case 'map':
         hide_screens();
         show_screen($url);

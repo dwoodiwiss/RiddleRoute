@@ -788,11 +788,12 @@ span
 ---------------------------------------------------------------------- */
 #creditContainer
 {
-  padding: 25px; 
+  /*padding: 25px; */
 }
 
 #roles
 {
+  padding-left: 50px;
   text-align: left;
   font-weight: 300;
   font-size: italic;
@@ -803,6 +804,20 @@ span
   font-weight: 600;
   font-size: 20px;
 }
+
+#creditsBack
+{
+  opacity: 0.4;
+  width: 85px;
+  height: 85px;
+  padding-top: 10px;
+}
+
+#creditsBack span
+{
+}
+
+
 
 /*
  * media queries for responsive design https://github.com/shichuan/mobile-html5-boilerplate/wiki/the-style
