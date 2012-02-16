@@ -1,6 +1,7 @@
 // @TODO updated readme.md and push project to github
 // @TODO add support for iPad
 // @TODO investigate localStorage alternative
+// @TODO check security and add input validation
 
 $(document).ready(function loader() {
 
