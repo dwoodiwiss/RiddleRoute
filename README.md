@@ -20,4 +20,4 @@ I'm also interested in removing the jQuery dependency.
 
 If you can offer any assistance on removing some repetitive code, please go to town!
 
-Further info can be read [Here](http://woodiwiss.me/blog/2012/04/11/riddle-route/)
+Further info can be read [here](http://woodiwiss.me/blog/2012/04/11/riddle-route/)
